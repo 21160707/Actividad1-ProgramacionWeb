@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadena de numeros | JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h1>Maximo, minimo y promedio</h1>
+        <p class="subtitulo">Ingresa una cadena de números separados por comas.</p>
+
+        <form id="form-verificacion" onsubmit="return false;">
+            
+            <div class="grupo-formulario">
+                <label for="cadena">Cadena de números :</label>
+                <input type="text" id="cadena" placeholder="Ej: 1,2,3,4,5" required>
+            </div>
+
+            <button type="button" id="btn-calcular" class="boton-enviar">
+                Calcular
+            </button>
+
+            <div class="grupo-formulario" style="margin-top: 20px;">
+                <input type="text" id="resultado" placeholder="Resultado" readonly>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>
