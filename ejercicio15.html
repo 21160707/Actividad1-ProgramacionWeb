@@ -11,26 +11,21 @@
 
     <div class="contenedor-formulario">
         <h1>Objetos en JavaScript</h1>
-        <p class="subtitulo">Ingresa el nombre y calificación del alumno.</p>
-
+        <p class="subtitulo">Ingresa la lista de alumnos y sus calificaciones (un alumno por línea).</p>
         <form id="form-verificacion" onsubmit="return false;">
             
             <div class="grupo-formulario">
-                <label for="nombre">Nombre del alumno :</label>
-                <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
-            </div>
-
-            <div class="grupo-formulario">
-                <label for="calificacion">Calificación :</label>
-                <input type="number" id="calificacion" placeholder="Ej: 8.5" step="0.1" min="0" max="10" required>
+                <label for="datos-alumnos">Lista de Alumnos y Calificaciones :</label>
+                <textarea id="datos-alumnos" rows="6" placeholder="Juan Pérez, 8.5&#10;Maria López, 9.2&#10;Pedro Gómez, 6.0" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical;" required></textarea>
             </div>
 
             <button type="button" id="btn-calcular" class="boton-enviar">
-                Calcular
+                Calcular Estadísticas
             </button>
 
             <div class="grupo-formulario" style="margin-top: 20px;">
-                <input type="text" id="resultado" placeholder="Resultado" readonly>
+                <label>Resultados del Análisis:</label>
+                <textarea id="resultado" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; background-color: #f9f9f9; resize: none;" readonly placeholder="Aquí aparecerán las estadísticas..."></textarea>
             </div>
 
         </form>
