@@ -97,3 +97,30 @@ input[readonly] {
 .boton-enviar:hover {
     background-color: #2980b9;
 }
+
+/* Estilos exclusivos del diseño interno de la tarea */
+.item-tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.btn-eliminar:hover { 
+    background-color: #c0392b; 
+}

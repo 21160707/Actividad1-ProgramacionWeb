@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+
+    <div class="card shadow-sm border-0" style="max-width: 500px; width: 100%; border-radius: 12px;">
+        <div class="card-body p-4">
+            
+            <h1 class="card-title text-primary text-center fs-4 fw-bold mb-1">Lista Dinámica</h1>
+            <p class="text-muted text-center small mb-4">Práctica de Manipulación del DOM en tiempo real</p>
+
+            <div class="input-group mb-4">
+                <input type="text" id="nuevoElemento" class="form-control" placeholder="Escribe un nuevo elemento..." aria-label="Nuevo elemento">
+                <button id="agregarBtn" class="btn btn-primary fw-medium" type="button">Agregar</button>
+            </div>
+
+            <h2 class="fs-6 fw-semibold text-secondary mb-3">Elementos Agregados:</h2>
+            <ul id="lista" class="list-group list-group-flush border rounded-3 overflow-hidden">
+                </ul>
+
+        </div>
+    </div>
+
+    <script src="js/ejercicio18.js"></script>
+</body>
+</html>
